@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Formulario de Turno</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h2>Mi Aplicación</h2>
+        </div>
+        <div class="navbar-right">
+            <span id="email">Usuario</span> <!-- Este es el lugar donde se mostrará el correo -->
+            <button id="edit-profile">Editar Perfil</button>
+            <button id="logout">Cerrar Sesión</button>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h2>Registro de Turno</h2>
+    <form id="turnoForm">
+        <label for="responsable">Persona Responsable:</label>
+        <input type="text" id="responsable" name="responsable" required><br><br>
+
+        <label for="horaInicio">Hora Inicio del Turno:</label>
+        <input type="time" id="horaInicio" name="horaInicio" required><br><br>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required><br><br>
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
+
+        <button type="button" id="agregarObservacion">Agregar Observación</button><br><br>
+
+        <button type="button" id="finalizarTurno">Finalizar Turno</button>
+    </form>
+
+    <h3>Observaciones Ingresadas:</h3>
+    <ul id="listaObservaciones"></ul>
+    <script src="navbar.js"></script>
+
+</body>
+
+<script src="apps.js"></script>
+
+</html>
